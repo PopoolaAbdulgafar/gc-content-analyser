@@ -1,23 +1,47 @@
-# GC Content Analyser
+ ## E. coli Genome GC Content Analysis Using Sliding Window Approach
 
-This project analyzes the GC content of the *E. coli* genome using a sliding window approach in Python.
+#Project Overview
+This project performs a comprehensive analysis of the GC content distribution in the Escherichia coli genome using a sliding window approach. The aim is to understand genomic composition patterns and visualize regional variations in nucleotide content.
+GC content (percentage of guanine and cytosine bases) is an important biological feature that can indicate gene density, genome stability, and functional regions within DNA sequences.
 
-## What it does
-- Loads E. coli DNA sequence from a FASTA file
-- Calculates GC content in windows of 1000 base pairs
-- Plots GC percentage across the first 50,000 bp
-- Saves the result as an image file
+# Objectives
+.Compute GC content across the full E. coli genome
 
-## Files in this project
-- gc_content.ipynb → Python notebook containing the analysis code
-- ecoli.fasta → DNA sequence file
-- gc_plot.png → Output graph showing GC content distribution
+.Implement a sliding window algorithm for regional analysis
 
-## Tools used
-- Python
-- Biopython
-- Matplotlib
-- Jupyter Notebook
+.Visualize GC distribution using histograms and line plots
 
-- ### Author
-- Popoola Abdulgafar
+.Compare AT vs GC ratios across genomic regions
+
+.Generate statistical summaries of genomic composition
+
+# Methods & Tools
+-Python
+-Biopython (sequence processing)
+-NumPy (numerical computation)
+-Matplotlib (data visualization)
+-Sliding window technique for local GC variation analysis
+
+# Analysis Performed
+- GC content calculated across genome segments
+- AT/GC ratio computed for comparative analysis
+- Histogram used to show GC distribution frequency
+- Sliding window plot used to detect regional variation patterns
+- Statistical summary including mean, min, max, and standard deviation
+# Key Findings
+- GC content varies across different regions of the E. coli genome
+- Certain regions show higher GC concentration, suggesting possible functional or structural significance
+- Distribution patterns indicate non-uniform nucleotide composition across the genome
+- AT/GC ratio highlights genomic balance and local variation
+
+# Biological Interpretation
+- GC-rich regions are often associated with gene-dense areas and higher DNA stability, while 
+- AT-rich regions may indicate regulatory or less conserved regions. The observed variation supports the idea that bacterial genomes are not compositionally uniform but organized into functionally relevant segments.
+
+# Author
+Popoola Abdulgafar (Bioinformatics)
+
+#This project demonstrates practical application of computational techniques in genomics and highlights the importance of GC content analysis in understanding bacterial genome structure.
+
+
+
